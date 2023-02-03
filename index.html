@@ -4,9 +4,230 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/css/img/favicon.ico">
+    <title>Spotify - Reproductos Web</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <section class="sidebar">
+            <nav class ="navbar bg-dark">
+                <img src="css/img/Spotify_Logo_RGB_White.png" alt="Logo" id="logoPrincipal">
+                <ul class ="nav navbar-nav">
+                    <li class ="nav-item">
+                        <!-- logo home-->
+                        <a class ="nav-link" href="#"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                            </svg>
+                            <span>Inicio</span> 
+                        </a>
+                    </li>
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="#"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="10" cy="10" r="7" />
+                                <line x1="21" y1="21" x2="15" y2="15" />
+                            </svg>
+                            <span>Buscar</span> 
+                        </a>
+                    </li>
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="#"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+                                <line x1="13" y1="8" x2="15" y2="8" />
+                                <line x1="13" y1="12" x2="15" y2="12" />
+                            </svg>
+                            <span>Tu Biblioteca</span> 
+                        </a>
+                    </li>
+                    <br>
+                    <br>
+                    <li class ="nav-item">
+                        <a class ="nav-link" href="#"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-plus" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <line x1="9" y1="12" x2="15" y2="12" />
+                                <line x1="12" y1="9" x2="12" y2="15" />
+                            </svg>
+                            <span>Crear Playlist</span> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class ="nav-link"href="#"> 
+                            <svg id="tus_me_gusta" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                            </svg>
+                            <span>Tus me gusta</span> 
+                        </a>
+                    </li>
+                </ul>
+                <div class="links">
+                    <a href="#">
+                        <span>Legal</span>
+                    </a>
+                    <a href="#">
+                        <span>Centro de privacidad</span>
+                    </a>
+                    <a href="#">
+                        <span>Politica de privacidad</span>
+                    </a>
+                    <a href="#">
+                        <span>Cookies</span>
+                    </a>
+                    <a href="#">
+                        <span>Sobre los anuncios</span>
+                    </a>
+                    <a href="#">
+                        <span>Cookies</span>
+                    </a>
+                </div>
+                <div class="div_boton_idioma">
+                    <button class="boton_idioma">
+                        <div class="icono_idioma">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="12" r="9" />
+                                <line x1="3.6" y1="9" x2="20.4" y2="9" />
+                                <line x1="3.6" y1="15" x2="20.4" y2="15" />
+                                <path d="M11.5 3a17 17 0 0 0 0 18" />
+                                <path d="M12.5 3a17 17 0 0 1 0 18" />
+                            </svg>
+                        </div>
+                        <p>Español de Latinoamerica</p>
+                    </button>
+                </div>
+            </nav>
+        </section>
+        <section class="header">
+            <div class="antes-despues">
+                <div class="color-anterior">
+                    <a class="anterior" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="15 6 9 12 15 18" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="color-siguiente">
+                    <a class="siguiente" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="9 6 15 12 9 18" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="primeros">
+                    <a class="premium" href="#">Premium</a>
+                    <a class="ayuda" href="#">Ayuda</a>
+                    <a class="descargar" href="#">Descargar</a>
+                    <hr>
+                    <a class="registrate" href="#">Registrate</a>
+                    <button class="inicio_sesion">Iniciar Sesion</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="main">
+            <div class="texto-main">   
+                <a href="#" class="enfoque">Enfoque</a>
+                <a href="#" class="mostrar">Mostrar Todo</a>
+            </div>
+            <div class="main-container-fila1">
+                <div class="cancion1">
+                    <img src="css/img/sergio.jpg" alt="">
+                    <div class="texto-cancion1">
+                        <p class="nombre-cancion">El Sergiño</p>
+                        <p class="artista">Artista 1</p>
+                    </div>
+                </div>
+                <div class="cancion2">
+                    <img src="css/img/shakira.jpg" alt="">
+                    <div class="texto-cancion2">
+                        <p class="nombre-cancion">Shakira</p>
+                        <p class="artista">Artista 2</p>
+                    </div>
+                </div>
+                <div class="cancion3">
+                    <img src="css/img/geo.jpg" alt="">
+                    <div class="texto-cancion3">
+                        <p class="nombre-cancion">Geo WH</p>
+                        <p class="artista">Artista 3</p>
+                    </div>
+                </div>
+                <div class="cancion4">
+                    <img src="css/img/ladygaga.webp" alt="">
+                    <div class="texto-cancion4">
+                        <p class="nombre-cancion">Lady Gaga</p>
+                        <p class="artista">Artista 4</p>
+                    </div>
+                </div>
+                <div class="cancion5">
+                    <img src="css/img/yarely.jpeg" alt="">
+                    <div class="texto-cancion4">
+                        <p class="nombre-cancion">OX Lover JR</p>
+                        <p class="artista">Artista 5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="texto-main">
+                <p>Enfoque</p>
+                <p>Mostrar todo</p>
+            </div>
+            <div class="main-container-fila2">
+                <div class="cancion6">
+                    <img src="css/img/nicki.jpeg" alt="">
+                    <div class="texto-cancion6">
+                        <p class="nombre-cancion"> Nicki Nicole</p>
+                        <p class="artista">Artista 6</p>
+                    </div>
+                </div>
+                <div class="cancion7">
+                    <img src="css/img/alex.jpeg" alt="">
+                    <div class="texto-cancion7">
+                        <p class="nombre-cancion">RH</p>
+                        <p class="artista">Artista 7</p>
+                    </div>
+                </div>
+                <div class="cancion8">
+                    <img src="css/img/billie.jpeg" alt="">
+                    <div class="texto-cancion8">
+                        <p class="nombre-cancion">Billie Eilish</p>
+                        <p class="artista">Artista 8</p>
+                    </div>
+                </div>
+                <div class="cancion9">
+                    <img src="css/img/alonso.jpeg" alt="">
+                    <div class="texto-cancion9">
+                        <p class="nombre-cancion">Ox Lover Lider Tecnico</p>
+                        <p class="artista">Artista 9</p>
+                    </div>
+                </div>
+                <div class="cancion10">
+                    <img src="css/img/wos.jpeg" alt="">
+                    <div class="texto-cancion10">
+                        <p class="nombre-cancion">Wos</p>
+                        <p class="artista">Artista 10</p>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <div class="texto_footer">
+                <p class="muestra">Muestra de Spotify</p>
+                <p class="registrate"> Registrate para acceder a canciones y podcast ilimitados con algunos anuncios. No necesitas tarjeta de credito.</p>    
+            </div>
+            <button class="boton-registro">Registrate Gratis</button>
+        </footer>
+    </div>
 </body>
 </html>
